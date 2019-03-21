@@ -1,0 +1,611 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~The Movie Lounge css~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/***************************
+ *  Outsourcing our work to chi- google
+ ***************************/
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+/***************************
+ *  HTML Hard changes
+ ***************************/
+/* BODY */
+body {
+    background: hsla(0, 0%, 0%, .9) url('http://i.imgur.com/aGn4Ci1.jpg') repeat;
+    background-size:100% 270%;
+}
+/* SPAN */
+span.server-whisper {
+    color: #ffffff;
+}
+span.userlist_owner {
+    color: #13f723;
+}
+span.pointer {
+    color: #ffffff;
+}
+/* TABLE */
+table {
+    background-color: transparent;
+}
+table ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+table td {
+    max-width: 9000px;
+}
+/* BUTTON */
+button.btn {
+    border-color: #08f53f;
+}
+button.btn.btn-small {
+    background-color: #181817;
+}
+/* A */
+a.btn.btn-small.dropdown-toggle {
+    background-color: #181817;
+}
+a.brand {
+    background-color: #2b2b2b;
+}
+/* DIV */
+div.well {
+    background-color:transparent!important;
+    border-color: transparent!important;
+    display: inline-table;
+}
+div.navbar-form.pull-right {
+    background-color: #2b2b2b;
+}
+div.nick-highlight {
+    background-color: #6e6c6e;
+}
+/* UL */
+ul.nav li a {
+    background-color: #2b2b2b;
+    font-weight: bold;
+}
+
+/***************************
+ *  Site classes's
+ ***************************/
+
+.qe_blame {
+    float: right;
+    padding-right: 3px;
+}
+.flip-horizontal {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH"; /*IE*/
+    filter: FlipH; /*IE*/
+}
+.spoiler{
+    color: #000 !important;
+}
+.spoiler:hover{
+    color: #FFF !important;
+}
+.qe_blame {
+    float: right;
+}
+
+/* Blurred chat */
+.d3d {
+    display: inline-block;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    color: #FFF;
+    text-shadow: 0 0.04em 0.05em #8e8e8e, 0 0.08em 0.05em #8a8a8a, 0 0.12em 0.05em #888, 0 0.16em 0.05em #848484, 0 0.2em 0.05em #808080, 0 0.24em 0.05em #7c7c7c, 0 0.28em 0.05em #787878, 0 0.32em 0.05em #727272, 0 0.36em 0.05em #6c6c6c, 0 0.4em 0.05em #686868;
+    transform-style: preserve-3d;
+    -moz-transform: rotatex(50deg);
+    -ms-transform: rotatex(50deg);
+    -o-transform: rotatex(50deg);
+    -webkit-transform: rotatex(50deg);
+    transform: rotatex(50deg)
+}
+.blurred{
+    color:transparent !important;
+    font-family: Georgia, serif;
+    font-style:italic;
+    font-size:1em;
+    text-shadow:0 0 20px #ffffff;
+    /*transition*/
+    -webkit-transition:all 250ms ease-in;
+    -moz-transition:all 250ms ease-in;
+    -o-transition:all 250ms ease-in;
+    transition:all 250ms ease-in;
+}
+.blurred img{
+    -webkit-filter:blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter:blur(20px);
+    /*transition*/
+    -webkit-transition:all 250ms ease-in;
+    -moz-transition:all 250ms ease-in;
+    -o-transition:all 250ms ease-in;
+    transition:all 250ms ease-in;
+}
+.blurred:hover{
+    text-shadow:none;
+    color:#dddddd  !important;
+}
+.blurred:hover img{
+    -webkit-filter:blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: none;
+}
+.blurred-image-alt {
+    position: relative;
+    display: inline-block;
+}
+.blurred-image-alt::after {
+    content: "hover to view";
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000;
+}
+.blurred-image-alt:hover::after {
+    display: none;
+    background: transparent;
+}
+
+/* Eh... no idea what this does */
+.flashy{
+    color:hsla(0, 0%, 0%, .9);
+    font:normal 1em Varela Round, sans-serif;
+    text-align:center;
+    text-transform:uppercase;
+    /*animation*/
+    -webkit-animation:move linear 2000ms infinite;
+    -moz-animation:move linear 2000ms infinite;
+    -ms-animation:move linear 2000ms infinite;
+    -o-animation:move linear 2000ms infinite;
+    animation:move linear 2000ms infinite;
+}
+@-webkit-keyframes move{
+    0% {  text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+    25% {  text-shadow:
+            -4px -4px 0 hsla(180, 100%, 50%, 1),
+            -3px -3px 0 hsla(180, 100%, 50%, 1),
+            -2px -2px 0 hsla(180, 100%, 50%, 1),
+            -1px -1px 0 hsla(180, 100%, 50%, 1),
+            4px 4px 0 hsla(0, 100%, 50%, 1),
+            3px 3px 0 hsla(0, 100%, 50%, 1),
+            2px 2px 0 hsla(0, 100%, 50%, 1),
+            1px 1px 0 hsla(0, 100%, 50%, 1);
+    }
+    50% {  text-shadow:
+            -4px 4px 0 hsla(0, 100%, 50%, 1),
+            -3px 3px 0 hsla(0, 100%, 50%, 1),
+            -2px 2px 0 hsla(0, 100%, 50%, 1),
+            -1px 1px 0 hsla(0, 100%, 50%, 1),
+            4px -4px 0 hsla(180, 100%, 50%, 1),
+            3px -3px 0 hsla(180, 100%, 50%, 1),
+            2px -2px 0 hsla(180, 100%, 50%, 1),
+            1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+    75% {  text-shadow:
+            4px 4px 0 hsla(180, 100%, 50%, 1),
+            3px 3px 0 hsla(180, 100%, 50%, 1),
+            2px 2px 0 hsla(180, 100%, 50%, 1),
+            1px 1px 0 hsla(180, 100%, 50%, 1),
+            -4px -4px 0 hsla(0, 100%, 50%, 1),
+            -3px -3px 0 hsla(0, 100%, 50%, 1),
+            -2px -2px 0 hsla(0, 100%, 50%, 1),
+            -1px -1px 0 hsla(0, 100%, 50%, 1);
+    }
+    100% {  text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+}
+@-moz-keyframes move{
+    0% {  text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+    25% {  text-shadow:
+            -4px -4px 0 hsla(180, 100%, 50%, 1),
+            -3px -3px 0 hsla(180, 100%, 50%, 1),
+            -2px -2px 0 hsla(180, 100%, 50%, 1),
+            -1px -1px 0 hsla(180, 100%, 50%, 1),
+            4px 4px 0 hsla(0, 100%, 50%, 1),
+            3px 3px 0 hsla(0, 100%, 50%, 1),
+            2px 2px 0 hsla(0, 100%, 50%, 1),
+            1px 1px 0 hsla(0, 100%, 50%, 1);
+    }
+    50% {  text-shadow:
+            -4px 4px 0 hsla(0, 100%, 50%, 1),
+            -3px 3px 0 hsla(0, 100%, 50%, 1),
+            -2px 2px 0 hsla(0, 100%, 50%, 1),
+            -1px 1px 0 hsla(0, 100%, 50%, 1),
+            4px -4px 0 hsla(180, 100%, 50%, 1),
+            3px -3px 0 hsla(180, 100%, 50%, 1),
+            2px -2px 0 hsla(180, 100%, 50%, 1),
+            1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+    75% {  text-shadow:
+            4px 4px 0 hsla(180, 100%, 50%, 1),
+            3px 3px 0 hsla(180, 100%, 50%, 1),
+            2px 2px 0 hsla(180, 100%, 50%, 1),
+            1px 1px 0 hsla(180, 100%, 50%, 1),
+            -4px -4px 0 hsla(0, 100%, 50%, 1),
+            -3px -3px 0 hsla(0, 100%, 50%, 1),
+            -2px -2px 0 hsla(0, 100%, 50%, 1),
+            -1px -1px 0 hsla(0, 100%, 50%, 1);
+    }
+    100% {  text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+}
+@keyframes move{
+    0% {  text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+    25% {  text-shadow:
+            -4px -4px 0 hsla(180, 100%, 50%, 1),
+            -3px -3px 0 hsla(180, 100%, 50%, 1),
+            -2px -2px 0 hsla(180, 100%, 50%, 1),
+            -1px -1px 0 hsla(180, 100%, 50%, 1),
+            4px 4px 0 hsla(0, 100%, 50%, 1),
+            3px 3px 0 hsla(0, 100%, 50%, 1),
+            2px 2px 0 hsla(0, 100%, 50%, 1),
+            1px 1px 0 hsla(0, 100%, 50%, 1);
+    }
+    50% {  text-shadow:
+            -4px 4px 0 hsla(0, 100%, 50%, 1),
+            -3px 3px 0 hsla(0, 100%, 50%, 1),
+            -2px 2px 0 hsla(0, 100%, 50%, 1),
+            -1px 1px 0 hsla(0, 100%, 50%, 1),
+            4px -4px 0 hsla(180, 100%, 50%, 1),
+            3px -3px 0 hsla(180, 100%, 50%, 1),
+            2px -2px 0 hsla(180, 100%, 50%, 1),
+            1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+    75% {  text-shadow:
+            4px 4px 0 hsla(180, 100%, 50%, 1),
+            3px 3px 0 hsla(180, 100%, 50%, 1),
+            2px 2px 0 hsla(180, 100%, 50%, 1),
+            1px 1px 0 hsla(180, 100%, 50%, 1),
+            -4px -4px 0 hsla(0, 100%, 50%, 1),
+            -3px -3px 0 hsla(0, 100%, 50%, 1),
+            -2px -2px 0 hsla(0, 100%, 50%, 1),
+            -1px -1px 0 hsla(0, 100%, 50%, 1);
+    }
+    100% {  text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+}
+
+/* Josiee styling  PUBLIC CHAT */
+/* Josiee styling USERLIST */
+.userlist-Josiee:before {
+    content: '✧'!important;
+    color: #00FF9E!important;
+}
+.userlist-Josiee:after {
+    content: '✧'!important;
+    color: #00FF9E!important;
+}
+.chat-msg-Josiee>span>.username:before{
+    content: '༼ つ ◕_◕ ༽つ━☆ﾟ✧･ﾟ:* ';
+    color: #00FF9E;!important;
+}
+
+/* Botshua styling  PUBLIC CHAT */
+/* Botshua styling USERLIST */
+.userlist-Botshua, .chat-msg-Botshua>span>.username{
+    color: #f44!important;
+}
+
+/***************************
+ *  Site id's
+ ***************************/
+#chatcontrols {
+    margin-top:4px
+}
+#motdwrap {
+    display: block; margin: 0 auto;
+}
+#motd > br {
+    display: none;
+}
+#guestname {
+    background-color: #ffffff;
+    border: solid #08f53f;
+}
+#currenttitle {
+    color: #ffffff;
+}
+#table1 {
+    border-collapse:separate;
+    border-spacing: 35px;
+    display: inline-table;
+}
+#messagebuffer {
+    background-color: #262e3b;
+}
+#userlist {
+    background-color: #181817;
+}
+#usercountwrap {
+    background-color: #2b2b2b;
+}
+#currenttitle {
+    background-color: #2b2b2b;
+}
+#chatonly {
+    background-color: #2b2b2b;
+}
+#optlink {
+    background-color: #2b2b2b;
+}
+#emotespanel img {
+    margin:5px;
+    max-height:35px;
+    cursor:pointer
+}
+#emotespanel {
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 5px auto;
+    border:solid 2px white;
+    border-radius:6px
+}
+
+/* Fixes button UI under chat */
+#textEmotes>button{
+    border-radius: 0 !important;
+}
+#colorFilters>button{
+    border-top-right-radius: 0 !important;
+}
+
+/* Box... stuff... NOT A FUCKING CLUE WHAT THIS IS FOR */
+#box {
+    overflow: hidden;
+    width: 500px;
+    border: 1px solid #ffffff;
+    margin: 50px auto;
+    padding: 10px;
+    text-align:left;
+}
+#box a {
+    text-decoration: none;
+    text-align:left;
+}
+#box h1,
+#box h2 {
+    text-align: left;
+    font-size: 25px;
+    font-weight:bold;
+    padding-bottom: 10px;
+}
+#box h3 {
+    font-size: 20px;
+    font-weight:bold;
+    padding-bottom: 5px;
+    text-align:left;
+}
+#box h4 {
+    font-size: 18px;
+    font-weight:bold;
+    padding-bottom: 5px;
+    color: red;
+    text-align:center;
+}
+#box p {
+    font-size: 15px;
+    font-weight:bold;
+    padding-bottom: 5px;
+    color:#ffffff;
+    text-align:left;
+}
+#steps {
+    display: none;
+    margin-top: 5px;
+}
+#link:hover {
+    color: green;
+}
+#link:hover #steps {
+    display: block;
+}
+.sc1 {
+    color:#FF7F00;
+}
+.sc2 {
+    color:#CC6500;
+}
+
+
+/***************************
+ *  Channel emote size specifics
+ ***************************/
+
+.channel-emote {
+    min-width: 10px;
+    width: auto;
+    max-width: 100px;
+    min-height: 10px;
+    height: auto;
+    max-height: 90px;
+}
+
+
+.channel-emote[title="#saywhat"] {
+    max-height: 125px!important;
+    max-width:  125px!important;
+}
+
+.channel-emote[title="#retarded"],
+.channel-emote[title="#mildconcern"],
+.channel-emote[title="#entertained"],
+.channel-emote[title="#brolove"],
+.channel-emote[title="#holdit"],
+.channel-emote[title="#yikes"],
+.channel-emote[title="#goodnews"],
+.channel-emote[title="#chewy"],
+.channel-emote[title="#tasty"],
+.channel-emote[title="#bitch"],
+.channel-emote[title="#base"],
+.channel-emote[title="#doit2"],
+.channel-emote[title="#riot"],
+.channel-emote[title="#letthemfight"],
+.channel-emote[title="#motorboat"],
+.channel-emote[title="#therethere"],
+.channel-emote[title="#doge"],
+.channel-emote[title="#mynigga"],
+.channel-emote[title="#stopit"],
+.channel-emote[title="#saidthat"],
+.channel-emote[title="#imgay"] {
+    max-height: 150px!important;
+    max-width:  150px!important;
+}
+
+.channel-emote[title="#ladies"],
+.channel-emote[title="#food2"],
+.channel-emote[title="#stab3"],
+.channel-emote[title="#pervert"],
+.channel-emote[title="#pantsoff"],
+.channel-emote[title="#bastards"],
+.channel-emote[title="#imglad"],
+.channel-emote[title="#blowjob"],
+.channel-emote[title="#best"],
+.channel-emote[title="#headshot"],
+.channel-emote[title="#hangup"],
+.channel-emote[title="#thereitis"],
+.channel-emote[title="#serious"],
+.channel-emote[title="#quotes"],
+.channel-emote[title="#phonecall"],
+.channel-emote[title="#fuckyourself"],
+.channel-emote[title="#badbitch"],
+.channel-emote[title="#ohjesus"],
+.channel-emote[title="#counter"],
+.channel-emote[title="#cum"],
+.channel-emote[title="#highfive2"],
+.channel-emote[title="#sheepish"] {
+    max-height: 175px!important;
+    max-width:  175px!important;
+}
+
+.channel-emote[title="#cage"],
+.channel-emote[title="#later"],
+.channel-emote[title="#latersexy"],
+.channel-emote[title="#breakinglaw"],
+.channel-emote[title="#lezbos"],
+.channel-emote[title="#ahhok"],
+.channel-emote[title="#baddaboom"],
+.channel-emote[title="#people"],
+.channel-emote[title="#mobile"],
+.channel-emote[title="#box"],
+.channel-emote[title="#dying"],
+.channel-emote[title="#masturbating"],
+.channel-emote[title="#bunk"],
+.channel-emote[title="#badtimes"],
+.channel-emote[title="#dafuq4"],
+.channel-emote[title="#notmysupervisor"],
+.channel-emote[title="#goodvibes"],
+.channel-emote[title="#democracy"],
+.channel-emote[title="#suicidal"],
+.channel-emote[title="#rube"],
+.channel-emote[title="#erection"],
+.channel-emote[title="#dunfuckedup"],
+.channel-emote[title="#anarchy"],
+.channel-emote[title="#scienceshit"],
+.channel-emote[title="#findyou"],
+.channel-emote[title="#nosense"],
+.channel-emote[title="#imout"],
+.channel-emote[title="#spidersense"],
+.channel-emote[title="#breakinglaw"],
+.channel-emote[title="#buttstuff"],
+.channel-emote[title="#member"],
+.channel-emote[title="#psychoboy"],
+.channel-emote[title="#jokes"],
+.channel-emote[title="#evilest"],
+.channel-emote[title="#ouch"],
+.channel-emote[title="#nothing"],
+.channel-emote[title="#cantthink"],
+.channel-emote[title="#whatdidyoudo"],
+.channel-emote[title="#sheepish"],
+.channel-emote[title="#enhance"],
+.channel-emote[title="#rhubarb"] {
+    max-height: 200px!important;
+    max-width:  200px!important;
+}
+
+/*
+    Mobile stuff
+    BE AT BOTTOM
+ */
+@media screen and (max-width: 600px) {
+    .channel-emote {
+        min-width: 10px;
+        width: auto;
+        max-width: 50px;
+        min-height: 10px;
+        height: auto;
+        max-height: 45px;
+    }
+}
