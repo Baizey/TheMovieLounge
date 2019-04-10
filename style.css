@@ -524,6 +524,9 @@ ul.nav li a {
     max-width:  150px!important;
 }
 
+.channel-emote[title="#illegal"],
+.channel-emote[title="#doubt"],
+.channel-emote[title="#modern"],
 .channel-emote[title="#ladies"],
 .channel-emote[title="#food2"],
 .channel-emote[title="#stab3"],
@@ -550,8 +553,6 @@ ul.nav li a {
     max-width:  175px!important;
 }
 
-.channel-emote[title="#illegal"],
-.channel-emote[title="#doubt"],
 .channel-emote[title="#cage"],
 .channel-emote[title="#later"],
 .channel-emote[title="#latersexy"],
