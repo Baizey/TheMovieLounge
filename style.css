@@ -524,6 +524,7 @@ ul.nav li a {
     max-width:  150px!important;
 }
 
+.channel-emote[title="#trapcard"],
 .channel-emote[title="#illegal"],
 .channel-emote[title="#doubt"],
 .channel-emote[title="#modern"],
