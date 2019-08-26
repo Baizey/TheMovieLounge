@@ -360,10 +360,10 @@ ul.nav li a {
     
 }
 .userlist-kattiest, .chat-msg-kattiest>span>.username{
-    color: #01D6C9!user;
+    color: #01D6C9!important;
 }
 .userlist-Nauts, .chat-msg-Nauts>span>.username{
-    color: #33E3FF!admin;
+    color: #33E3FF!important;
 }
 /***************************
  *  Site id's
