@@ -357,14 +357,8 @@ ul.nav li a {
 /* Botshua styling USERLIST */
 .userlist-Botshua, .chat-msg-Botshua>span>.username{
     color: #f44!important;
-    
 }
-.userlist-kattiest, .chat-msg-kattiest>span>.username{
-    color: #01D6C9!important;
-}
-.userlist-Nauts, .chat-msg-Nauts>span>.username{
-    color: #33E3FF!important;
-}
+
 /***************************
  *  Site id's
  ***************************/
