@@ -338,21 +338,6 @@ ul.nav li a {
     }
 }
 
-/* Josiee styling  PUBLIC CHAT */
-/* Josiee styling USERLIST */
-.userlist-Josiee:before {
-    content: '✧'!important;
-    color: #00FF9E!important;
-}
-.userlist-Josiee:after {
-    content: '✧'!important;
-    color: #00FF9E!important;
-}
-.chat-msg-Josiee>span>.username:before{
-    content: '༼ つ ◕_◕ ༽つ━☆ﾟ✧･ﾟ:* ';
-    color: #00FF9E;!important;
-}
-
 /* Botshua styling  PUBLIC CHAT */
 /* Botshua styling USERLIST */
 .userlist-Botshua, .chat-msg-Botshua>span>.username{
