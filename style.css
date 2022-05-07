@@ -494,6 +494,7 @@ ul.nav li a {
 }
 
 
+.channel-emote[title="#entertained"],
 .channel-emote[title="#saywhat"] {
     max-height: 125px!important;
     max-width:  125px!important;
@@ -501,7 +502,6 @@ ul.nav li a {
 
 .channel-emote[title="#retarded"],
 .channel-emote[title="#mildconcern"],
-.channel-emote[title="#entertained"],
 .channel-emote[title="#brolove"],
 .channel-emote[title="#holdit"],
 .channel-emote[title="#yikes"],
